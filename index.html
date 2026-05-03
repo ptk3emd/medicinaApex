@@ -70,7 +70,12 @@ strong { color: var(--w); font-weight: 700; }
   outline-offset: 4px;
   border-radius: 10px;
 }
-
+.nav-logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
 /* Shared layout */
 section { padding: 100px 60px; }
 .max { max-width: var(--max); margin: 0 auto; }
@@ -658,14 +663,8 @@ footer a { color: var(--text-muted-readable); text-decoration: underline; text-u
 <!-- Navigation -->
 <nav class="nav" id="main-nav" aria-label="Navegação principal">
   <a href="#hero" class="nav-logo" aria-label="ApexMed — voltar ao início">
-    <span class="logo-mark" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 3 3.8 19.5h16.4L12 3Z"></path>
-        <path d="M8.4 14.4h7.2"></path>
-        <path d="M10.1 10.8h3.8"></path>
-      </svg>
-    </span>
-    <span class="nav-wordmark">ApexMed</span>
+  <img src="favicon.ico" alt="ApexMed" class="nav-logo-img">
+  <span class="nav-wordmark">ApexMed</span>
   </a>
   <div class="nav-links" aria-label="Seções da página">
     <a href="#porque">Por que importa</a>
